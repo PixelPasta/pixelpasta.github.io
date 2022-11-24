@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <div class="navbar-brand text-light" href="#">
+            <img src="https://i.ibb.co/TqRSN6T/cute.gif" alt="" width="30" height="30" class="d-inline-block align-text-top ">&nbsp;PixelPasta
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html"><div  onMouseOver="this.style.color='#a8a8a8'"
+                  onMouseOut="this.style.color='#fffcfc'" >Home</div></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#"><div  onMouseOver="this.style.color='#a8a8a8'"
+                  onMouseOut="this.style.color='#fffcfc'" >API</div></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <h1 class="display-3">Pixel API</h1>
+        <p class="lead">Pixel API is an APi providing many endpoints for casual applications/bots. It has:</p>
+        <ul class="list-group">
+          <li class="list-group-item">Fun Endpoints <i class="bi bi-caret-down-fill"></i>
+          <br>
+          <div class="group-items">
+            <ul style="list-style:none">
+              <li><i class="bi bi-info-circle-fill"></i> Fact<br>
+                Base URL: <a href="https://pixel-api-production.up.railway.app/fact" target="_blank">https://pixel-api-production.up.railway.app/fact</a><br>
+                Example Response: <pre><code class="code-json">{"fact":"The word \"dexter\" whose meaning refers to the right hand is typed with only the left hand."}</code></pre>
+              </li>
+              <li><i class="bi bi-emoji-laughing-fill"></i> Joke<br>
+                Base URL: <a href="https://pixel-api-production.up.railway.app/fun/joke" target="_blank">https://pixel-api-production.up.railway.app/fun/joke</a><br>
+                Example Response: <pre><code  class="code-json">{"joke":"Girls are like internet domain names... the ones I like are already taken."}</code></pre>
+              </li>
+              <li><i class="bi bi-question-circle-fill"></i> Riddle<br>
+                Base URL: <a href="https://pixel-api-production.up.railway.app/fun/riddle" target="_blank">https://pixel-api-production.up.railway.app/fun/riddle</a><br>
+                Example Response: <pre><code  class="code-json">{"riddle":"I am lighter than air but a hundred people cannot lift me. Careful, I am fragile. What am I?","answer":"A bubble"}</code></pre>
+              </li>
+              <li><i class="bi bi-quote"></i> Quote<br>
+                Base URL: <a href="https://pixel-api-production.up.railway.app/fun/quote" target="_blank">https://pixel-api-production.up.railway.app/fun/quote</a><br>
+                Example Response: <pre><code  class="code-json">{"riddle":"I am lighter than air but a hundred people cannot lift me. Careful, I am fragile. What am I?","answer":"A bubble"}</code></pre>
+              </li>
+              <li><i class="bi bi-chat-left-dots-fill"></i> Chat Bot<br>
+                Base URL: <a href="https://pixel-api-production.up.railway.app/fun/chatbot" target="_blank">https://pixel-api-production.up.railway.app/fun/chatbot</a><br>
+                Parameters: message[string]<br>
+                Example Response: <pre><code  class="code-json">{"riddle":"I am lighter than air but a hundred people cannot lift me. Careful, I am fragile. What am I?","answer":"A bubble"}</code></pre>
+              </li>
+              <li><i class="bi bi-lightbulb-fill"></i> Advice<br>
+                Base URL: <a href="https://pixel-api-production.up.railway.app/fun/Advice" target="_blank">https://pixel-api-production.up.railway.app/fun/advice</a><br>
+                Example Response: <pre><code  class="code-json">{"advice":"It's not about who likes you, it's about who you like."}</code></pre>
+              </li>
+              <li><i class="bi bi-8-circle-fill"></i> 8ball<br>
+                Base URL: <a href="https://pixel-api-production.up.railway.app/fun/8ball" target="_blank">https://pixel-api-production.up.railway.app/fun/8ball</a><br>
+                Example Response: <pre><code  class="code-json">{"reply":"Yes – definitely"}</code></pre>
+              </li>
+              <li><i class="bi bi-book-half"></i> Would You Rather<br>
+                Base URL: <a href="https://pixel-api-production.up.railway.app/fun/wouldyourather" target="_blank">https://pixel-api-production.up.railway.app/fun/wouldyourather</a><br>
+                Example Response: <pre><code  class="code-json">{"option_1":{"question":"Be Cinderella","votes":"357,083"},"option_2":{"question":"Be Ariel","votes":"576,901"}}</code></pre>
+              </li>
+              <li><i class="bi bi-dpad-fill"></i> Crystal Ball<br>
+                Base URL: <a href="https://pixel-api-production.up.railway.app/fun/crystalball" target="_blank">https://pixel-api-production.up.railway.app/fun/crystalball</a><br>
+                Example Response: <pre><code  class="code-json">{"reply":"Outlook good"}</code></pre>
+              </li>
+            </ul>
+          </div>
+          </li>
+          <li class="list-group-item">Meme Endpoints <i class="bi bi-caret-down-fill"></i>
+            <br>
+            <div class="group-items">
+              <ul style="list-style:none">
+                <li><i class="bi bi-info-circle-fill"></i> Sponge-Bob Burn<br>
+                  Base URL: <a href="https://pixel-api-production.up.railway.app/image/spongebobburn/" target="_blank">https://pixel-api-production.up.railway.app/image/spongebobburn/</a><br>
+                  Parameters: query[string]<br>
+                  Example Response:<br> <img src="https://pixel-api-production.up.railway.app/image/spongebobburn/?text=query">
+                </li>
+                <li><i class="bi bi-emoji-laughing-fill"></i> Joke<br>
+                  Base URL: <a href="https://pixel-api-production.up.railway.app/fun/joke" target="_blank">https://pixel-api-production.up.railway.app/fun/joke</a><br>
+                  Example Response: <pre><code  class="code-json">{"joke":"Girls are like internet domain names... the ones I like are already taken."}</code></pre>
+                </li>
+                <li><i class="bi bi-question-circle-fill"></i> Riddle<br>
+                  Base URL: <a href="https://pixel-api-production.up.railway.app/fun/riddle" target="_blank">https://pixel-api-production.up.railway.app/fun/riddle</a><br>
+                  Example Response: <pre><code  class="code-json">{"riddle":"I am lighter than air but a hundred people cannot lift me. Careful, I am fragile. What am I?","answer":"A bubble"}</code></pre>
+                </li>
+                <li><i class="bi bi-quote"></i> Quote<br>
+                  Base URL: <a href="https://pixel-api-production.up.railway.app/fun/quote" target="_blank">https://pixel-api-production.up.railway.app/fun/quote</a><br>
+                  Example Response: <pre><code  class="code-json">{"riddle":"I am lighter than air but a hundred people cannot lift me. Careful, I am fragile. What am I?","answer":"A bubble"}</code></pre>
+                </li>
+                <li><i class="bi bi-chat-left-dots-fill"></i> Chat Bot<br>
+                  Base URL: <a href="https://pixel-api-production.up.railway.app/fun/chatbot" target="_blank">https://pixel-api-production.up.railway.app/fun/chatbot</a><br>
+                  Parameters: message[string]<br>
+                  Example Response: <pre><code  class="code-json">{"riddle":"I am lighter than air but a hundred people cannot lift me. Careful, I am fragile. What am I?","answer":"A bubble"}</code></pre>
+                </li>
+                <li><i class="bi bi-lightbulb-fill"></i> Advice<br>
+                  Base URL: <a href="https://pixel-api-production.up.railway.app/fun/Advice" target="_blank">https://pixel-api-production.up.railway.app/fun/advice</a><br>
+                  Example Response: <pre><code  class="code-json">{"advice":"It's not about who likes you, it's about who you like."}</code></pre>
+                </li>
+                <li><i class="bi bi-8-circle-fill"></i> 8ball<br>
+                  Base URL: <a href="https://pixel-api-production.up.railway.app/fun/8ball" target="_blank">https://pixel-api-production.up.railway.app/fun/8ball</a><br>
+                  Example Response: <pre><code  class="code-json">{"reply":"Yes – definitely"}</code></pre>
+                </li>
+                <li><i class="bi bi-book-half"></i> Would You Rather<br>
+                  Base URL: <a href="https://pixel-api-production.up.railway.app/fun/wouldyourather" target="_blank">https://pixel-api-production.up.railway.app/fun/wouldyourather</a><br>
+                  Example Response: <pre><code  class="code-json">{"option_1":{"question":"Be Cinderella","votes":"357,083"},"option_2":{"question":"Be Ariel","votes":"576,901"}}</code></pre>
+                </li>
+                <li><i class="bi bi-dpad-fill"></i> Crystal Ball<br>
+                  Base URL: <a href="https://pixel-api-production.up.railway.app/fun/crystalball" target="_blank">https://pixel-api-production.up.railway.app/fun/crystalball</a><br>
+                  Example Response: <pre><code  class="code-json">{"reply":"Outlook good"}</code></pre>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item">Data endpoints</li>
+          <li class="list-group-item">Text endpoints</li>
+          <li class="list-group-item">Anime endpoints</li>
+        </ul>
+       </div>
+       
+      
+
+<div class="bg-dark footer ">
+<img src="./assets/logo_gret.png" width="64" height="60" style="display: inline;">
+<div class="footer-text text-light">
+  PixelPasta © 2022
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="bi bi-github text-light nav-item"></i> <a href="https://github.com/PixelPasta" target="_blank">Github</a>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="bi bi-reddit text-light nav-item"></i> <a href="https://reddit.com/u/AssasinatorX4" target="_blank">Reddit</a>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="bi bi-discord text-light nav-item"></i> <a href="https://pixelpasta.github.io/invite" target="_blank">Discord</a>
+
+
+</div>
+</div>
+
+</body>
+</html>
+  
+
