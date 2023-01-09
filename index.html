@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
     <meta charset="UTF-8">
+    <script src="./index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
@@ -11,13 +12,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <title>Pixel Pasta</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="update/magic.min.css">
     <link href="https://i.ibb.co/TqRSN6T/cute.gif" rel="icon">
     <meta content="Hi! I'm PixelPasta" property="og:description" />
     <meta content="https://pixelpasta.github.io" property="og:url" />
     <meta content="https://i.ibb.co/TqRSN6T/cute.gif" property="og:image" />
     <link href="./update/styles.css" rel="stylesheet">
     <script src="./update/bounce.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js" integrity="sha512-FRX6MYITclzDyyMmSQLgZoZTfE+GLzAQpjs15adVZMY6AqhsrBLx8UZwp4FoqrrRFWY9TiaPwja7EY5fk309vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
@@ -121,15 +125,16 @@
       <h2 style="text-align: center"><u>About Me:</u></h2>
       <b>I am a hobby programmer looking to pursure full-stack web development. </b> 
     <center>
-    <img src='./update/assets/dev-goals.png' width="200px">
-    <img src='./update/assets/soft-goals.png' width="200px">
-    <img src='./update/assets/lang-goals.png' width="200px">
-   
+      <div class="goals" >
+    <img src='./update/assets/dev-goals.png' width="200px" dataa-aos="zoom-out-left" data-aos-duration="1500">
+    <img src='./update/assets/soft-goals.png' width="200px" dataa-aos="zoom-out" data-aos-duration="1500">
+    <img src='./update/assets/lang-goals.png' width="200px" dataa-aos="zoom-out-right" data-aos-duration="1500"> 
+  </div>
   </div> 
 <hr>
 <h2 style="text-align: center" class="bio"><u>Softwares and technologies I use:</u></h2>
 <div class="tech">
-  <table class="table table-bordered">
+  <table class="table table-bordered" dataa-aos="slide-right"   dataa-aos-duration="1500"> 
     <thead>
       <tr>
        
@@ -253,7 +258,7 @@
           <div class="card-body">
             <h4 class="card-title">minimlastic rock paper scissors</h4>
             <p class="card-text">Made it when I was bored</p>
-            <a href="https://pixelpasta.github.io/Ping%20Pong/index.html" target="_blank">
+            <a href="./rps/index.html" target="_blank">
             <img class="card-img-bottom" src="./update/assets/rps_prev.png" style="width: 300px;"  alt="Card image cap">
           </a>
           </div>
@@ -262,7 +267,8 @@
       </div>
 
       <div class="card-deck">
-  
+
+  <div class="card2">
         <div class="card text-white bg-dark mb-3 d-inline-block scale-in-center " style="max-width: 33.333%; ">
           <div class="card-header">MSPB</div>
           <div class="card-body">
@@ -274,31 +280,37 @@
           </a>
           </div>
           </div>
-         
+         </div>
+
+         <div class="card2">
           <div class="card text-white bg-dark mb-3 d-inline-block scale-in-center" style="max-width: 33.333%; ">
             <div class="card-header">Pixel-HTML-Quiz</div>
             <div class="card-body">
               <h4 class="card-title">Do you know HTML well?</h4>
               <p class="card-text">Test Your HTML knowledge inside your PC's terminal.</p>
-              <a href="https://pixelpasta.github.io/Ping%20Pong/index.html" target="_blank">
+              <a href="https://github.com/PixelPasta/Pixel-HTML-Quiz" target="_blank">
               <img class="card-img-bottom" src="./update/assets/html_prev.png" style="width: 300px;"  alt="Card image cap">
             </a>
             </div>
             </div>
+          </div>
            
+          <div class="card2">
             <div class="card text-white bg-dark mb-3 d-inline-block scale-in-center" style="max-width: 33.333%; ">
               <div class="card-header">Motivate Me
               </div>
               <div class="card-body">
                 <h4 class="card-title">Are you demotivated?</h4>
                 <p class="card-text">use this command line tool to motivate yourself!</p>
-                <a href="https://pixelpasta.github.io/Ping%20Pong/index.html" target="_blank">
+                <a href="https://www.npmjs.com/package/motivateme" target="_blank">
                 <img class="card-img-bottom" src="./update/assets/mm_prev.png" style="width: 300px;"  alt="Card image cap">
               </a>
               </div>
               </div>
+              </div>
       
           </div>
+        </div>
     </center>
   </div>
 
@@ -336,6 +348,12 @@
     <i class="bi bi-twitter text-light nav-item"></i> <a href="https://twitter.com/ItsMePixelPasta" target="_blank">Twitter</a>
 </div>
 </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 600
+  });
+</script>
 </body>
 </html>
   
